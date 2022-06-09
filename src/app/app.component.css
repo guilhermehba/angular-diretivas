@@ -3,7 +3,45 @@ p {
 }
 .btn {
   margin: 2px;
+  border-radius: 5px;
 }
 .moreWidth {
   width: 18%;
+}
+.add {
+  background-color: blue;
+  width: 100px;
+  height: 40px;
+}
+.remove {
+  background-color: red;
+  width: 100px;
+  height: 40px;
+}
+.auto {
+  background-color: green;
+  width: 100px;
+  height: 40px;
+}
+.stop {
+  background-color: darkorange;
+  width: 100px;
+  height: 40px;
+}
+.zero {
+  background-color: lightgray;
+  color: black;
+  /* text-shadow: 0 0 3px black; */
+  width: 205px;
+  height: 40px;
+}
+.stopAndZero {
+  background-color: gray;
+  width: 205px;
+  height: 40px;
+}
+.count {
+  border: 0.5px solid lightgray;
+  width: 50px;
+  border-radius: 5px;
 }

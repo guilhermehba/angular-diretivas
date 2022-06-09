@@ -1,26 +1,59 @@
-<div class="text-center">
-  <h1 class="text-danger"><strong>Curso de Diretivas</strong></h1>
+<div class="justify-content-center">
+  <h1 class="justify-content-between text-center">
+    <strong>Curso de Diretivas</strong>
+  </h1>
   <div class="row justify-content-center">
     <div class="col-2">Contador:</div>
-    <div class="card col-1" [ngClass]="{ moreWidth: count > 09 }">
+    <div class="card col-1" [ngClass]="{ moreWidth: count > 09 }" class="count">
       {{ count }}
     </div>
   </div>
-
-  <div class="row justify-content-center">
-    <span class="btn btn-primary col-2" (click)="contar()">Adicionar</span>
-    <span class="btn btn-danger col-2" (click)="diminuir()">Remover</span>
-  </div>
-  <div class="row justify-content-center">
-    <span class="btn btn-success col-2" (click)="auto()">Auto</span>
-    <span class="btn btn-warning col-2" (click)="parar()">Parar</span>
-  </div>
-  <div class="row justify-content-center">
-    <span class="btn btn-secondary col-4" (click)="zerar()">Zerar</span>
-  </div>
-  <div class="row justify-content-center">
-    <span class="btn btn-secondary col-4" (click)="pararZerar()"
-      >Parar e Zerar</span
-    >
+  <div class="justify-content-between align-items-center">
+    <div class="row justify-content-center">
+      <button
+        type="button"
+        class="btn btn-primary add col-2"
+        (click)="contar()"
+      >
+        Adicionar
+      </button>
+      <button
+        type="button"
+        class="btn btn-danger remove col-2"
+        (click)="diminuir()"
+      >
+        Remover
+      </button>
+    </div>
+    <div class="row justify-content-center">
+      <button type="button" class="btn btn-success auto col-2" (click)="auto()">
+        Auto
+      </button>
+      <button
+        type="button"
+        class="btn btn-warning stop col-2"
+        (click)="parar()"
+      >
+        Parar
+      </button>
+    </div>
+    <div class="row justify-content-center">
+      <button
+        type="button"
+        class="btn btn-secondary zero col-4"
+        (click)="zerar()"
+      >
+        Zerar
+      </button>
+    </div>
+    <div class="row justify-content-center">
+      <button
+        type="button"
+        class="btn btn-secondary stopAndZero col-4"
+        (click)="pararZerar()"
+      >
+        Parar e Zerar
+      </button>
+    </div>
   </div>
 </div>
